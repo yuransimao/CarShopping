@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    outline: none;
+    border: none;
 
 }
 
@@ -67,4 +69,47 @@ body{
     align-items: center;
     flex-direction: column;
     z-index: 1;
+}
+
+.Container-card .Cardbx h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    color: antiquewhite;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.Container-card .Cardbx h2{
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    color: antiquewhite;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.Container-card .Cardbx h2 > span{
+    padding-left: 4px;
+    color: yellow;
+}
+.Container-card .Cardbx .btn{
+    position: relative;
+    top:200px;
+    color: aliceblue;
+    opacity: 0;
+}
+
+.Container-card .Cardbx .btn button{
+    color: aliceblue;
+    background: #2196f3;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.Container-card:hover .Cardbx .btn{
+opacity: 1;
 }
