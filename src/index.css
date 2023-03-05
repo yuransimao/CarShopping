@@ -33,4 +33,19 @@ body{
 
 .Container-card:hover::before{
     transform: skewY(390deg);
+    top:-70%;
+}
+
+.Container-card::after{
+    content: '';
+}
+
+.Container-card .img{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    z-index: 2;
 }
