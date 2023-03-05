@@ -1,6 +1,9 @@
 .App-Card{
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    top: 20%;
+    left: 12%;
 }

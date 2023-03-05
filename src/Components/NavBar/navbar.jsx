@@ -3,7 +3,7 @@ export function Navbar (){
     return(
         <div className="Navbar">
             <div className="carrinho">
-                <BsCart4/>
+                <button><BsCart4/></button>
             </div>
         </div>
     )

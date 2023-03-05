@@ -1,4 +1,5 @@
 import { Cards } from './Components/Cards/card'
+import { Navbar } from './Components/NavBar/navbar'
 import './App.css'
 
 import itens from './itens'
@@ -33,6 +34,7 @@ console.log(cartItem)
 
   return (
     <div className="App">
+       <Navbar/>
       <div className="App-Card">
         {itens.map((item) => (
           <Cards key={item.id}
