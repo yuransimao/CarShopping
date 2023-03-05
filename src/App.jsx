@@ -19,14 +19,16 @@ function App() {
    if(ProductExist){
     setCartItem(cart.map(items => (
       items.id === product.id && {...ProductExist, quantidade : ProductExist.quantidade + 1 }
+      
     )))
+    console.log(ProductExist)
    }
    else{
     setCartItem([...cart, {...product , quantidade : 1}])
    }
-  
+   
   }
-  console.log(cartItem)
+
 
   return (
     <div className="App">
