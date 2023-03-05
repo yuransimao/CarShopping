@@ -14,7 +14,7 @@ export function Cards(props){
             </div>
 
             <div className="btn">
-                <button onClick={() => props.add}>Add</button>
+                <button onClick={() => props.add(props.item)}>Add</button>
             </div>
         </div>
     )
