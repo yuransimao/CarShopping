@@ -136,3 +136,18 @@ opacity: 1;
     font-size: 1.3rem;
     color: red;
 }
+
+
+.carShopping{
+    position:absolute;
+    background:#0a7bd8;
+    height:100%;
+    width:20%;
+    right:0;
+    z-index:100;
+}
+
+.carShopping button{
+    font-size:1.5rem;
+    cursor:pointer;
+}
