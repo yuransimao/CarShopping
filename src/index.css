@@ -49,3 +49,22 @@ body{
     padding-top: 20px;
     z-index: 2;
 }
+
+.Container-card .img img{
+    max-width: 87%;
+    transition: 0.5s;
+}
+.Container-card:hover .img img{
+    max-width: 67%;
+    
+}
+
+.Container-card .Cardbx{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
