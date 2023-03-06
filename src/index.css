@@ -142,7 +142,7 @@ opacity: 1;
 .carShopping{
     position:absolute;
     background:#0a7bd8;
-    height:100%;
+    min-height:100%;
     width:20%;
     right:0;
     z-index:100;
@@ -157,6 +157,23 @@ opacity: 1;
     font-size:1.5rem;
     cursor:pointer;
 }
+
+.carShopping .btn-Carsho{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position:absolute;
+    top:calc(100% - 12rem);
+    left:-11rem;
+    font-size:1.3rem;
+}
+
+.carShopping .btn-Carsho button{
+    font-size:1.2rem;
+}
+
+
 
 @keyframes fadeUp{
     0%{

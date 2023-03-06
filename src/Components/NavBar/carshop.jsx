@@ -5,7 +5,7 @@ export function Carshopping(props){
         <div className='carShopping'>
             <button onClick= {() => props.setVisivel(false)}><RxCross2/></button>
             <h1>total</h1>
-           <div className="btn">
+           <div className="btn-Carsho">
             <button>Finalizar compra</button>
             <button>Ver carrinho</button>
            </div>
