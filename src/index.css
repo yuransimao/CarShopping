@@ -4,7 +4,7 @@
     outline: none;
     border: none;
     background: none;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
 
 }
 
@@ -156,11 +156,14 @@ opacity: 1;
     padding:1rem;
     font-size:1.5rem;
     cursor:pointer;
+    z-index:3;
 }
 .carShopping .total{
     padding:0.5rem;
     position:relative;
-
+    top:-3.5rem;
+    font-size:1.2rem;
+    font-weight:500;
     color:white;
 }
 .carShopping .btn-Carsho{
@@ -170,7 +173,7 @@ opacity: 1;
     flex-direction:column;
     position:absolute;
     top:calc(100% - 10rem);
-    left:-12rem;
+    left:-11.2rem;
     font-size:1.3rem;
 }
 

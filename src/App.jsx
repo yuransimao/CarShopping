@@ -28,10 +28,11 @@ function App() {
 }
 
 
+console.log(cartItem)
 
   return (
     <div className="App">
-       <Navbar/>
+       <Navbar cartItem={cartItem}/>
       <div className="App-Card">
         {itens.map((item) => (
           <Cards key={item.id}
