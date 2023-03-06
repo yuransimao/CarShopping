@@ -9,27 +9,24 @@ import { useState } from 'react'
 
 
 function App() {
-
+  
   const [cartItem, setCartItem] = useState([])
  
   const addItens = (product) =>{
    const cart =[...cartItem]
 
   const ProductExist = cart.find(item => item.id === product.id)
-  
-  if(ProductExist){
-    
-    setCartItem(cart.map( itens => (
-      itens.id === product.id && {...ProductExist, quantity : ProductExist.quantity + 1}
-    ) ))
-  }
 
-  else{
-    setCartItem([...cart, {...product , quantity : 1}])
+  if(ProductExist){
+      setCartItem(cart.map( item =>
+        item.id === product.item && {...ProductExist, quantidade : ProductExist.quantidade + 1}
+        ))
   }
-  
+  else{
+    setCartItem([...cart, {...product, quantidade : 1}])
+  }
 }
-console.log(cartItem)
+
 
 
   return (
