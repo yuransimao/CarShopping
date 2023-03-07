@@ -15,10 +15,17 @@ export function Carshopping({cartItem, setVisivel}){
                 
             </div>
             <h1 className='total'>Total:<span>{totalPrice}</span> </h1>
+            <div className="carShopping-item">
+               {shop.map( item => (
+                <div className="carShopping-item-name">{item.name}</div>
+               ))} 
+            </div>
+
+            {shop.length >= 1 &&
            <div className="btn-Carsho">
             <button>Finalizar compra</button>
-            <button>Ver carrinho</button>
-           </div>
+            <button>Ver carrinho</button> 
+           </div>}
         </div>
     )
 }
