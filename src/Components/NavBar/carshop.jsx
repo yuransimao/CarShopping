@@ -1,18 +1,20 @@
 import {RxCross2} from"react-icons/rx"
 
-export function Carshopping(props,{cartItem}){
+export function Carshopping({cartItem, setVisivel}){
     const shop = cartItem
 
-    const totalPrice = shop.reduce((price , item) => price + item.price * item.quantidade, 0)
+    const totalPrice = shop && shop.reduce((price , item) => price + item.price * item.quantity, 0)
+
     console.log(totalPrice)
+
     return(
         <div className='carShopping'>
         
-            <button onClick= {() => props.setVisivel(false)}><RxCross2/></button>
+            <button onClick= {() => setVisivel(false)}><RxCross2/></button>
             <div className='content'>
                 
             </div>
-            <h1 className='total'>Total: </h1>
+            <h1 className='total'>Total:<span>{totalPrice}</span> </h1>
            <div className="btn-Carsho">
             <button>Finalizar compra</button>
             <button>Ver carrinho</button>

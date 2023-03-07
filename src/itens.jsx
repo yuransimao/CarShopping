@@ -12,9 +12,9 @@ const itens = [
     img :'img/iphone-13.jpg'
 },
     {
-        id: 3,
+    id: 3,
     name: "Iphone 14",
-    price: 150000,
+    price: 190000,
     img :'img/iphone14-pro.jpg'
 }
 ]

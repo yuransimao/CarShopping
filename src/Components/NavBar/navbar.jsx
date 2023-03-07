@@ -4,7 +4,8 @@ import { Carshopping } from "./carshop"
 import {useState} from "react"
 export function Navbar ({cartItem}){
 
-    console.log(cartItem)
+    
+   
     const [visivel, setVisivel] = useState( false)
     return(
     <>
