@@ -12,6 +12,7 @@ function App() {
   
   const [cartItem, setCartItem] = useState([])
  
+  
   const addItens = (product) =>{
   const cart =[...cartItem]
   const ProductExist = cart.find(item => item.id === product.id)
@@ -21,14 +22,18 @@ function App() {
   }
   else{
     setCartItem(cart.map((item) => (
-      item.id === product.id ? {...ProductExist, quantity : ProductExist.quantity +1} : item
+      item.id === product.id ? {...ProductExist, quantity : ++ProductExist.quantity  , stock : --ProductExist.stock <=0 } : item
     )))
+    
+
   }
+console.log(cartItem)
+  
+  
 
 }
 
 
-console.log(cartItem)
   return (
     <div className="App">
        <Navbar cartItem={cartItem}/>

@@ -5,8 +5,7 @@ export function Carshopping({cartItem, setVisivel}){
 
     const totalPrice = shop && shop.reduce((price , item) => price + item.price * item.quantity, 0)
 
-    console.log(totalPrice)
-
+    
     return(
         <div className='carShopping'>
         
@@ -17,7 +16,10 @@ export function Carshopping({cartItem, setVisivel}){
             <h1 className='total'>Total:<span>{totalPrice}</span> </h1>
             <div className="carShopping-item">
                {shop.map( item => (
+                <>
                 <div className="carShopping-item-name">{item.name}</div>
+                <div className="carShopping-item-name">{item.quantity}</div>
+                </>
                ))} 
             </div>
 
