@@ -24,7 +24,7 @@ export function Carshopping({cartItem, setVisivel, removequantity}){
                 <div className="carShopping-item-quantity">{item.quantity}</div>
                 <div className="carShopping-item-img"><img src={item.img} /></div>
                 <div className="carShopping-item-quantity-price">{item.quantity * item.price}</div>
-                <button className="carShopping-item-button" onClick ={removequantity(item)}> <RxCross2/> </button>
+                <button className="carShopping-item-button" onClick ={ () => removequantity(item)}> <RxCross2/> </button>
                 
                 </div>
                ))} 
