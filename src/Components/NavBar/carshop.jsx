@@ -1,9 +1,9 @@
 import {RxCross2} from"react-icons/rx"
-import {useNavigate} from "react-router-dom"
+
 
 export function Carshopping({cartItem, setVisivel}){
     const shop = cartItem
-    const Navigate = useNavigate()
+
 
     const totalPrice = shop && shop.reduce((price , item) => price + item.price * item.quantity, 0)
 
