@@ -2,7 +2,7 @@ import {BsCart4} from "react-icons/bs"
 import { Carshopping } from "./carshop" 
 
 import {useState} from "react"
-export function Navbar ({cartItem}){
+export function Navbar ({cartItem, removequantity}){
 
     
    
@@ -14,7 +14,7 @@ export function Navbar ({cartItem}){
                 <button onClick ={() => setVisivel(true)}><BsCart4/></button>
             </div>
         </div>
-           {visivel === true ? < Carshopping cartItem={cartItem} setVisivel ={setVisivel}/> : false}
+           {visivel === true ? < Carshopping cartItem={cartItem} removequantity={removequantity} setVisivel ={setVisivel}/> : false}
         </>
     )
 }

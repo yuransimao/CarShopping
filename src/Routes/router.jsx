@@ -31,10 +31,23 @@ export function Routers(){
  
   
 }
+
+  const removequantity = (product) =>{
+   const carts = [...cartItem]
+   const ProductExist = carts.find(item => item.id === product.id)
+    if(ProductExist.quantity === 1){
+      setCartItem(carts.filter((item) => (item.id !== product.id)))
+    }
+    else{
+      setCartItem(carts.map((item) => (
+        item.id === product.id ? {...ProductExist, quantity : --ProductExist.quantity   , stock : ++ProductExist.stock <=0 } : item
+      )))
+    }
+  }
         return(
             <>
         <BrowserRouter>
-            <Navbar cartItem={cartItem}/>
+            <Navbar cartItem={cartItem} removequantity={removequantity}/>
             <Routes>
                 <Route exact path="/" element={<Home addItens= {addItens} cartItem={cartItem}  />}/>
                 <Route path="/Carrrinho" element={<Carrinho cartItem={cartItem} />}/>

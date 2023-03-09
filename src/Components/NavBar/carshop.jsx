@@ -2,7 +2,7 @@ import {RxCross2} from"react-icons/rx"
 import {Link} from "react-router-dom"
 
 
-export function Carshopping({cartItem, setVisivel}){
+export function Carshopping({cartItem, setVisivel, removequantity}){
     const shop = cartItem
 
 
@@ -24,7 +24,7 @@ export function Carshopping({cartItem, setVisivel}){
                 <div className="carShopping-item-quantity">{item.quantity}</div>
                 <div className="carShopping-item-img"><img src={item.img} /></div>
                 <div className="carShopping-item-quantity-price">{item.quantity * item.price}</div>
-                <button className="carShopping-item-button"> <RxCross2/> </button>
+                <button className="carShopping-item-button" onClick ={removequantity(item)}> <RxCross2/> </button>
                 
                 </div>
                ))} 
