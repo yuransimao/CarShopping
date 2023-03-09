@@ -14,7 +14,7 @@ export function Cards(props){
                 <h1>{props.name}</h1>
                 <h2>{props.price}<span>Kz</span></h2>
             <div className="btn">
-                <button  onClick={() => props.add(props.item)}>Add</button>
+                <button onClick={() => props.add(props.item)}>Add</button>
             </div>
             </div>
         </div>
