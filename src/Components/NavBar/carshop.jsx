@@ -1,4 +1,5 @@
 import {RxCross2} from"react-icons/rx"
+import {Link} from "react-router-dom"
 
 
 export function Carshopping({cartItem, setVisivel}){
@@ -20,15 +21,17 @@ export function Carshopping({cartItem, setVisivel}){
                {shop.map( item => (
                 <>
                 <div className="carShopping-item-name">{item.name}</div>
-                <div className="carShopping-item-name">{item.quantity}</div>
+                <div className="carShopping-item-quantity">{item.quantity}</div>
+                <div className="carShopping-item-img"><img src={item.img} alt={item.name}/></div>
+                <div className="carShopping-item-quantity-price">{item.quantity * item.price}</div>
                 </>
                ))} 
             </div>
 
             {shop.length >= 1 &&
            <div className="btn-Carsho">
-            <button>Finalizar compra</button>
-            <button>Ver carrinho</button> 
+            <Link to='/Finalizar'>Finalizar compra</Link>
+            <Link to='/Carrinho'>Ver carrinho</Link> 
            </div>}
         </div>
     )

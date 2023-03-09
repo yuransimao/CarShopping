@@ -37,8 +37,8 @@ export function Routers(){
             <Navbar cartItem={cartItem}/>
             <Routes>
                 <Route exact path="/" element={<Home addItens= {addItens} cartItem={cartItem}  />}/>
-                <Route path="/Carrrinho" element={<Carrinho/>}/>
-                <Route path="/" element={<Finalizar/>}/>
+                <Route path="/Carrrinho" element={<Carrinho cartItem={cartItem} />}/>
+                <Route path="/Finalizar" element={<Finalizar cartItem={cartItem}/>}/>
             </Routes>
         </BrowserRouter>
         </>
