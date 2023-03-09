@@ -21,17 +21,16 @@ function App() {
     setCartItem([...cart, {...product, quantity : 1}])
   }
   else{
+  
     setCartItem(cart.map((item) => (
-      item.id === product.id ? {...ProductExist, quantity : ++ProductExist.quantity  , stock : --ProductExist.stock <=0 } : item
+      item.id === product.id ? {...ProductExist, quantity : product.stock >= ProductExist.quantity && ProductExist.quantity + 1  , stock : --ProductExist.stock <=0 } : item
     )))
     
 
-  }
-console.log(cartItem)
-  
-  
+  }  
 
 }
+
 
 
   return (
@@ -45,6 +44,8 @@ console.log(cartItem)
           img={item.img}
           add={addItens}
           item={item}
+          cartItem ={cartItem}
+
           />
         ))}
       </div>
