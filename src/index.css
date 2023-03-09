@@ -151,7 +151,7 @@ opacity: 1;
     animation:fadeUp .4s linear ;
 }
 
-.carShopping button{
+.carShopping .carShopping-button{
     position:relative;
     left:14rem;
     padding:1rem;
@@ -213,8 +213,36 @@ opacity: 1;
     background:#000000;
     border:2px solid rgb(0, 0, 0);
 }
+.carShopping-item .item{
+    display:flex;
+   align-items:center;
+   justify-content:center;
+    padding:1rem;
+    background:#2196f3;
+    border-radius: 4px;
+    margin-bottom:0.6rem;
+    height:3vh;
+}
+.carShopping-item .item .carShopping-item-name{
+    padding:0 0.3rem;
+}
+.carShopping-item .item .carShopping-item-quantity{
+    padding:0 0.4rem;
+}
+.carShopping-item .item .carShopping-item-img{
+    padding:0 0.4rem;
+}
+.carShopping-item .item .carShopping-item-quantity-price{
+    padding:0 0.4rem;
+}
 
-
+.carShopping-item .item .carShopping-item-button{
+    cursor:pointer;
+}
+.carShopping-item .item .carShopping-item-button svg{
+    color:red;
+    font-size: 1.2rem;
+}
 @keyframes fadeUp{
     0%{
     transform:translateX(7rem);

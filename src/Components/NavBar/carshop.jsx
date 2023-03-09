@@ -12,19 +12,21 @@ export function Carshopping({cartItem, setVisivel}){
     return(
         <div className='carShopping'>
         
-            <button onClick= {() => setVisivel(false)}><RxCross2/></button>
+            <button className='carShopping-button' onClick= {() => setVisivel(false)}><RxCross2/></button>
             <div className='content'>
                 
             </div>
             <h1 className='total'>Total:<span>{totalPrice}</span> </h1>
             <div className="carShopping-item">
                {shop.map( item => (
-                <>
+                <div className='item'>
                 <div className="carShopping-item-name">{item.name}</div>
                 <div className="carShopping-item-quantity">{item.quantity}</div>
-                <div className="carShopping-item-img"><img src={item.img} alt={item.name}/></div>
+                <div className="carShopping-item-img"><img src={item.img} /></div>
                 <div className="carShopping-item-quantity-price">{item.quantity * item.price}</div>
-                </>
+                <button className="carShopping-item-button"> <RxCross2/> </button>
+                
+                </div>
                ))} 
             </div>
 
