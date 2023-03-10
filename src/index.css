@@ -245,11 +245,19 @@ opacity: 1;
     font-size: 1.2rem;
 }
 .Finalizar{
+    display:flex;
+    align-items:center;
+
+    flex-direction:column;
     height: 100%;
     width:100%;
     position: absolute;
     top: 12%;
     
+}
+
+.Finalizar a {
+    color:white;
 }
 
 
