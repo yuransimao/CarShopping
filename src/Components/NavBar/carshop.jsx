@@ -32,8 +32,8 @@ export function Carshopping({cartItem, setVisivel, removequantity}){
 
             {shop.length >= 1 &&
            <div className="btn-Carsho">
-            <Link to='/Finalizar'>Finalizar compra</Link>
-            <Link to='/Carrinho'>Ver carrinho</Link> 
+            <Link to='/Finalizar' onClick= {() => setVisivel(false)}>Finalizar compra</Link>
+            <Link to='/Carrinho' onClick= {() => setVisivel(false)}>Ver carrinho</Link> 
            </div>}
         </div>
     )

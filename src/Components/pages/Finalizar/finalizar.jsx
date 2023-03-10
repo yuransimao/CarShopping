@@ -1,5 +1,8 @@
+import { Table } from "../../Table/table"
 export function Finalizar (){
     return(
-        <h1>finalizar</h1>
+        <>
+        <Table/>
+        </>
     )
 }
