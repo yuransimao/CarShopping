@@ -1,6 +1,7 @@
 export function Table({cartItem}){
     return(
-        <div className="Table">
+        <>       {cartItem.length === 0 ? <h1>Não possuis Nenhum item no carrinho</h1> : (
+            <div className="Table">
             <table className="content-table">
                 <thead>
                     <tr>
@@ -23,5 +24,6 @@ export function Table({cartItem}){
                 </tbody>
             </table>
         </div>
+        )}</>
     )
 }
