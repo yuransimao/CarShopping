@@ -1,4 +1,4 @@
-export function Table(){
+export function Table({cartItem}){
     return(
         <div className="Table">
             <table className="content-table">
@@ -11,12 +11,15 @@ export function Table(){
                     </tr>
                 </thead>
                 <tbody>
+                {cartItem?.map((item)=>(
                     <tr>
-                        <td>Yuran</td>
-                        <td>1000</td>
-                        <td>2</td>
-                        <td>1000</td>
+                    <td>{item.name}</td>
+                    <td>{item.price}</td>
+                    <td>{item.quantity}</td>
+                    <td>{item.quantity * item.price}</td>
                     </tr>
+                    ))
+                }
                 </tbody>
             </table>
         </div>

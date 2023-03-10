@@ -1,8 +1,8 @@
 import { Table } from "../../Table/table"
-export function Finalizar (){
+export function Finalizar ({cartItem}){
     return(
         <div className="Finalizar">
-        <Table/>
+        <Table cartItem= {cartItem}/>
         </div>
     )
 }
