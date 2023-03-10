@@ -6,6 +6,7 @@
     background: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
     text-decoration:none;
+    user-select: none;
 
 }
 
@@ -242,6 +243,20 @@ opacity: 1;
 .carShopping-item .item .carShopping-item-button svg{
     color:red;
     font-size: 1.2rem;
+}
+.Finalizar{
+    height: 100%;
+    width:100%;
+    background-color: red;
+    position: absolute;
+    top: 12%;
+    
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 5px 0;
+    min-height: 500px;
 }
 @keyframes fadeUp{
     0%{
